@@ -4,9 +4,10 @@
         <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
         <select name="sport">
             <option disabled selected>Sport</option>
-            <option value="basket_ball">Basketball</option>
-            <option value="soccer">Soccer</option>
-            <option value="ultimate_frisbee">Ultimate frisbee</option>
+            {% for sport in sports %}
+                <option value="{{sport}}">{{sport}}</option>
+            {% endfor %}
+        </option>
         </select>
         <button type="submit">Register</button>
     </form>
