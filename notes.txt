@@ -1,0 +1,5 @@
+# always use server side validation to avoid hacking
+# client side validation is good but not trustable
+
+# The reason we will use sql database instead of a dictionary is because dictionary is volatile memory, if server power fails, all data will be lost.
+
